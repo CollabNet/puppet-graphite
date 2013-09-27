@@ -50,7 +50,7 @@ class graphite::params {
       $package_whisper = [ 'python-whisper' ]
       $package_web     = [ 'graphite-web']
       package { 'mod_wsgi':
-        ensure => installed,
+      ensure => installed,
       }
     }
     'Debian', 'Ubuntu': {
@@ -61,7 +61,7 @@ class graphite::params {
     }
     default: {
       fail("\"${module_name}\" provides no package default value
-      for \"${::operatingsystem}\"")
+            for \"${::operatingsystem}\"")
     }
   }
 
@@ -107,7 +107,7 @@ class graphite::params {
     }
     default: {
       fail("\"${module_name}\" provides no service parameters
-      for \"${::operatingsystem}\"")
+            for \"${::operatingsystem}\"")
     }
   }
 
