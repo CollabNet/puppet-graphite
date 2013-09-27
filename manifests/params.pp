@@ -49,9 +49,6 @@ class graphite::params {
       $package_carbon  = [ 'python-carbon' ]
       $package_whisper = [ 'python-whisper' ]
       $package_web     = [ 'graphite-web']
-      package { 'mod_wsgi':
-      ensure => installed,
-      }
     }
     'Debian', 'Ubuntu': {
       # main application
